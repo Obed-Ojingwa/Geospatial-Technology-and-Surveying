@@ -2,10 +2,9 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const images = [
-    'https://images.unsplash.com/photo-1551679483-655d0fee8d8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwxfHxsaWRhJTIwaW1hZ2V8ZW58MHx8fHwxNzIxNDU2MDAw&ixlib=rb-4.0.3&q=80&w=400', // Lidar image
-    'https://images.unsplash.com/photo-1520545534574-8eedce55d276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwxfHxkcj9lfGVufDB8fHx8MTcyMTR1NTAwMHww&ixlib=rb-4.0.3&q=80&w=400', // Drone image
-    'https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHxzdXJ2ZXljeSUyMGltYWdlfGVufDB8fHx8MTcyMTR1NTAwMHww&ixlib=rb-4.0.3&q=80&w=400', // Surveying image
-    'https://images.unsplash.com/photo-1551697625-9b3e9a55d4f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHxnaXN8ZW58MHx8fHwxNzIxNDU2MDAwfHA&ixlib=rb-4.0.3&q=80&w=400' // GIS image
+    'gis_drone.jpeg', // GIS Drone image
+    'gis_img.jpg', // Lidar image
+    'GIS_map.jpg', // Drone image
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +25,7 @@ const Hero = () => {
             className={`w-full h-full flex-shrink-0 transition-transform duration-700 ease-in-out transform ${idx === currentIndex ? 'translate-x-0' : idx === (currentIndex + images.length - 1) % images.length ? '-translate-x-full' : 'translate-x-full'}`}
           >
             <img
-              src={img}
+              src={img} // Replace with actual image paths
               alt={`Slide ${idx + 1}`}
               className="w-full h-full object-cover"
             />
