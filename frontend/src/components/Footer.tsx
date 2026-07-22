@@ -4,8 +4,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <img src="/logo.png" alt="Terrabyte Global Ltd" className="h-10 w-auto" />
-            <span className="font-bold text-xl">Terrabyte Global Ltd</span>
+            
+            <img src="/service_logo.png" alt="Service Logo" className="h-10 w-auto" />
           </div>
           <p className="text-gray-200">
             Providing cutting-edge geospatial and surveying solutions across Africa.

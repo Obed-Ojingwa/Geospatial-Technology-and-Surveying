@@ -3,8 +3,8 @@ const Navbar = () => {
     <nav className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center space-x-3">
-          <img src="/logo.png" alt="Terrabyte Global Ltd" className="h-10 w-auto" />
-          <span className="font-bold text-xl text-primary">Terrabyte Global Ltd</span>
+          
+          <img src="/service_logo.png" alt="Service Logo" className="h-10 w-auto" />
         </div>
         <div className="hidden md:flex items-center space-x-6">
           <Link href="#home">Home</Link>
