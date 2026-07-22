@@ -42,7 +42,7 @@ const services = [
     description: 'Design, implementation, and analysis of GIS solutions for spatial data management and decision making.'
   },
   {
-    title: 'Store (Product/Software/Hardware)',
+    title: 'Store',
     icon: <FaStore />,
     description: 'Supply of geospatial software, hardware, drones, sensors, and related accessories.'
   },
@@ -52,7 +52,7 @@ const services = [
     description: 'Subsurface investigations using magnetic, gravity, resistivity, and seismic methods.'
   },
   {
-    title: 'Training (Intermediate/Advanced/Professional)',
+    title: 'Training',
     icon: <FaChalkboardTeacher />,
     description: 'Specialized training programs in GIS, drone operations, remote sensing, and geospatial analytics.'
   },
