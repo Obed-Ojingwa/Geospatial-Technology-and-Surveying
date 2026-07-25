@@ -23,11 +23,11 @@ const App = () => {
         <About />
         <Services />
         <Training />
-        <DroneRepair />
         <Store />
         <Blog />
         <Event />
         <Career />
+        <DroneRepair />
         <ContactForm />
       </main>
       <Footer />

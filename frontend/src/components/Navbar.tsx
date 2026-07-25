@@ -3,7 +3,7 @@ const Navbar = () => {
     <nav className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center space-x-3">
-          
+
           <img src="/service_logo.png" alt="Service Logo" className="h-10 w-auto" />
         </div>
         <div className="hidden md:flex items-center space-x-6">
@@ -15,6 +15,7 @@ const Navbar = () => {
           <Link href="#blog">Blog</Link>
           <Link href="#event">Events</Link>
           <Link href="#career">Career</Link>
+          <Link href="#drone_repair">Drone Repair</Link>
           <Link href="#contact">Contact</Link>
           <Link href="#account">Account</Link>
         </div>
