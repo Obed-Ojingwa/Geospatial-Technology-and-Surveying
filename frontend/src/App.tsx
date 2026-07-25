@@ -8,6 +8,7 @@ import Store from './components/Store';
 import Blog from './components/Blog';
 import Event from './components/Event';
 import Career from './components/Career';
+import DroneRepair from './components/DroneRepair';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
@@ -22,6 +23,7 @@ const App = () => {
         <About />
         <Services />
         <Training />
+        <DroneRepair />
         <Store />
         <Blog />
         <Event />
