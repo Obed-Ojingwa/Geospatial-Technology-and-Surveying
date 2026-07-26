@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 const Career = () => {
   const positions = [
     {
@@ -26,6 +28,8 @@ const Career = () => {
     }
   ];
 
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <section id="career" className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,26 +37,45 @@ const Career = () => {
         <p className="text-center text-gray-600 mb-12">
           Join our team of passionate professionals and contribute to innovative geospatial solutions that make a difference.
         </p>
-        <div className="space-y-6">
-          {positions.map((pos, idx) => (
-            <div key={idx} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-xl font-semibold text-primary">{pos.title}</h3>
-                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">{pos.type}</span>
-              </div>
-              <p className="text-gray-600 mb-2"><strong>Location:</strong> {pos.location}</p>
-              <p className="text-gray-600">{pos.description}</p>
-              <a href="#" className="mt-4 inline-block text-primary font-medium hover:underline">
-                Apply Now →
-              </a>
+
+        {!expanded && (
+          <div className="text-center mb-6">
+            <button
+              onClick={() => setExpanded(true)}
+              className="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg shadow-sm hover:bg-primary-dark transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+            >
+              Explore Career Opportunities →
+            </button>
+          </div>
+        )}
+
+        {expanded && (
+          <>
+            <div className="space-y-6">
+              {positions.map((pos, idx) => (
+                <div key={idx} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-xl font-semibold text-primary">{pos.title}</h3>
+                    <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">{pos.type}</span>
+                  </div>
+                  <p className="text-gray-600 mb-2"><strong>Location:</strong> {pos.location}</p>
+                  <p className="text-gray-600">{pos.description}</p>
+                  <a href="#" className="mt-4 inline-block text-primary font-medium hover:underline">
+                    Apply Now →
+                  </a>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <a href="#" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
-            View All Careers
-          </a>
-        </div>
+            <div className="mt-8 text-center">
+              <button
+                onClick={() => setExpanded(false)}
+                className="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg shadow-sm hover:bg-primary-dark transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              >
+                Show Less →
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
