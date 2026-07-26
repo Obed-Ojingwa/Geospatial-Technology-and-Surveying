@@ -50,7 +50,7 @@ const Footer = () => {
             <li><a href="#services" className="hover:text-white transition-colors">Buy Equipment and Software</a></li>
             <li><a href="#services" className="hover:text-white transition-colors">Geophysical Survey</a></li>
             <li><a href="#services" className="hover:text-white transition-colors">Consultancy</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Drone Repair</a></li>
+            {/* <li><a href="#services" className="hover:text-white transition-colors">Drone Repair</a></li> */}
             <li><a href="#services" className="hover:text-white transition-colors">Spatial Analysis and Modelling</a></li>
           </ul>
         </div>
