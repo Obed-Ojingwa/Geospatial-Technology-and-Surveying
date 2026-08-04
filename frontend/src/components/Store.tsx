@@ -23,7 +23,7 @@ const Store = () => {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <a href="#" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+          <a href="/store" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
             Visit Our Store
           </a>
         </div>

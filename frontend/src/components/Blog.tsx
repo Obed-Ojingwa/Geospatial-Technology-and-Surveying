@@ -4,19 +4,22 @@ const Blog = () => {
       title: 'How Drones Are Revolutionizing Land Surveying',
       excerpt: 'Discover the latest advancements in drone technology that are making land surveys faster, safer, and more accurate.',
       date: 'May 15, 2024',
-      image: 'https://images.unsplash.com/photo-1520545534574-8eedce55d276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwxfHxkcj9lfGVufDB8fHx8MTcyMTR1NTAwMHww&ixlib=rb-4.0.3&q=80&w=400'
+      image: 'https://images.unsplash.com/photo-1520545534574-8eedce55d276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwxfHxkcj9lfGVufDB8fHx8MTcyMTR1NTAwMHww&ixlib=rb-4.0.3&q=80&w=400',
+      slug: 'how-drones-are-revolutionizing-land-surveying'
     },
     {
       title: 'Understanding GIS: From Basics to Advanced Applications',
       excerpt: 'A comprehensive guide to Geographic Information Systems and how they empower decision-making across industries.',
       date: 'Apr 22, 2024',
-      image: 'https://images.unsplash.com/photo-1551697625-9b3e9a55d4f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHxnaXN8ZW58MHx8fHwxNzIxNDU2MDAwfHA&ixlib=rb-4.0.3&q=80&w=400'
+      image: 'https://images.unsplash.com/photo-1551697625-9b3e9a55d4f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHxnaXN8ZW58MHx8fHwxNzIxNDU2MDAwfHA&ixlib=rb-4.0.3&q=80&w=400',
+      slug: 'understanding-gis-from-basics-to-advanced-applications'
     },
     {
       title: 'The Future of Bathymetric Surveying with Autonomous Vessels',
       excerpt: 'Exploring how autonomous surface vessels are transforming underwater mapping and marine construction.',
       date: 'Mar 10, 2024',
-      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHxzdXJ2ZXljeSUyMGltYWdlfGVufDB8fHx8MTcyMTR1NTAwMHww&ixlib=rb-4.0.3&q=80&w=400'
+      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHxzdXJ2ZXljeSUyMGltYWdlfGVufDB8fHx8MTcyMTR1NTAwMHww&ixlib=rb-4.0.3&q=80&w=400',
+      slug: 'the-future-of-bathymetric-surveying-with-autonomous-vessels'
     }
   ];
 
@@ -38,7 +41,7 @@ const Blog = () => {
                 <time className="text-sm text-gray-500 mb-2 block">{post.date}</time>
                 <h3 className="text-xl font-semibold text-primary mb-2 hover:underline">{post.title}</h3>
                 <p className="text-gray-600 line-clamp-3">{post.excerpt}</p>
-                <a href="#" className="mt-4 inline-block text-primary font-medium hover:underline">
+                <a href={`/blog/${post.slug}`} className="mt-4 inline-block text-primary font-medium hover:underline">
                   Read More →
                 </a>
               </div>
@@ -46,7 +49,7 @@ const Blog = () => {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <a href="#" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+          <a href="/blog" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
             View All Blog Posts
           </a>
         </div>
