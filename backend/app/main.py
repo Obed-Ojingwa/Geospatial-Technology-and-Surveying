@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from . import models, database
-from .routers import contact
+from .routers import contact, services, projects, team, testimonials, blog
 
 app = FastAPI(title="Terrabyte Global Ltd API", version="0.1.0")
 
@@ -16,6 +16,11 @@ app.add_middleware(
 
 # Include routers
 app.include_router(contact.router, prefix="/api")
+app.include_router(services.router, prefix="/api")
+app.include_router(projects.router, prefix="/api")
+app.include_router(team.router, prefix="/api")
+app.include_router(testimonials.router, prefix="/api")
+app.include_router(blog.router, prefix="/api")
 
 @app.get("/")
 def root():
