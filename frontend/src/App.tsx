@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
+import TestimonialSubmission from './components/TestimonialSubmission';
 import Training from './components/Training';
 import Store from './components/Store';
 import Blog from './components/Blog';
@@ -35,6 +36,7 @@ const App = () => {
                 <Services />
                 <Portfolio />
                 <Testimonials />
+                <TestimonialSubmission />
                 <Training />
                 <Store />
                 <Blog />
