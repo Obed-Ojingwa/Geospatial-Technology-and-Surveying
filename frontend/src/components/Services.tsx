@@ -65,18 +65,38 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-primary mb-12">Our Services</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {services.map((service, idx) => (
-            <div key={idx} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1 p-6 flex flex-col items-start">
-              <div className="w-12 h-12 flex items-center justify-center mb-4 bg-primary/10 rounded-full">
-                {service.icon}
+    <section id="services" className="services-section">
+      <div className="services-shell">
+        <div className="services-heading">
+          <h2>Our Services</h2>
+          <span className="services-arrow" aria-hidden="true" />
+        </div>
+
+        <div className="services-featured-grid">
+          {services.slice(0, 3).map((service, idx) => (
+            <article key={service.title} className={`service-card service-card-${idx}`}>
+              <div className="service-card-image" />
+              <div className="service-card-overlay" />
+              <div className="service-card-content">
+                <div className="service-icon" aria-hidden="true">{service.icon}</div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
               </div>
-              <h3 className="text-xl font-semibold text-primary mb-2">{service.title}</h3>
-              <p className="text-gray-600 flex-1">{service.description}</p>
-            </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="services-more-grid">
+          {services.slice(3).map((service) => (
+            <article key={service.title} className="service-card service-card-compact">
+              <div className="service-card-image" />
+              <div className="service-card-overlay" />
+              <div className="service-card-content">
+                <div className="service-icon" aria-hidden="true">{service.icon}</div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            </article>
           ))}
         </div>
       </div>

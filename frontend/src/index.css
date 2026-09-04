@@ -21,3 +21,173 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #1565c0;
 }
+
+.services-section {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem 5rem;
+  color: #f7fbff;
+  background-color: #071d42;
+  background-image:
+    linear-gradient(rgba(44, 104, 177, 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(44, 104, 177, 0.22) 1px, transparent 1px),
+    linear-gradient(135deg, transparent 49.8%, rgba(35, 92, 160, 0.16) 50%, transparent 50.2%);
+  background-position: center;
+  background-size: 4rem 4rem, 4rem 4rem, 9rem 9rem;
+}
+
+.services-shell {
+  position: relative;
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.services-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.services-heading h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.services-arrow {
+  position: relative;
+  display: block;
+  width: 2rem;
+  height: 1.5rem;
+  margin-top: 0.8rem;
+  border-top: 1px solid #66b9ff;
+  border-right: 1px solid #66b9ff;
+  transform: rotate(45deg) translate(-0.25rem, -0.25rem);
+}
+
+.services-arrow::before {
+  position: absolute;
+  top: -1px;
+  right: 0.1rem;
+  width: 2.6rem;
+  content: '';
+  border-top: 1px solid #66b9ff;
+  transform: rotate(-45deg) translate(0.1rem, 0.1rem);
+  transform-origin: right center;
+}
+
+.services-featured-grid,
+.services-more-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.services-featured-grid {
+  align-items: start;
+}
+
+.services-more-grid {
+  margin-top: 0.7rem;
+}
+
+.service-card {
+  position: relative;
+  min-height: 12.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(206, 229, 255, 0.18);
+  border-radius: 1.25rem;
+  isolation: isolate;
+  box-shadow: 0 0.8rem 1.8rem rgba(0, 0, 0, 0.18);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.service-card-1 {
+  margin-top: 1.7rem;
+  min-height: 14rem;
+}
+
+.service-card:hover {
+  border-color: rgba(143, 207, 255, 0.65);
+  transform: translateY(-0.35rem);
+}
+
+.service-card-image,
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.service-card-image {
+  z-index: -2;
+  background: url('/gis_drone.jpeg') center / cover;
+  filter: saturate(0.55) blur(1px);
+  transform: scale(1.04);
+}
+
+.service-card-overlay {
+  z-index: -1;
+  background: linear-gradient(160deg, rgba(25, 42, 67, 0.36), rgba(16, 35, 62, 0.88));
+}
+
+.service-card-content {
+  display: flex;
+  height: 100%;
+  min-height: inherit;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.3rem 1.2rem;
+}
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-bottom: 0.35rem;
+  color: #fff;
+  font-size: 1.9rem;
+}
+
+.service-card h3 {
+  margin: 0 0 0.25rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.service-card p {
+  max-width: 15rem;
+  margin: 0;
+  color: rgba(247, 251, 255, 0.9);
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+.service-card-compact {
+  min-height: 10rem;
+}
+
+@media (max-width: 640px) {
+  .services-section {
+    padding: 1.75rem 1rem 3.5rem;
+  }
+
+  .services-featured-grid,
+  .services-more-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card-1 {
+    margin-top: 0;
+    min-height: 11rem;
+  }
+
+  .service-card,
+  .service-card-compact {
+    min-height: 11rem;
+  }
+}
