@@ -1,13 +1,13 @@
-import { FiArrowRight, FiCheckCircle } from 'react-icons/fi';
+import { FiArrowRight, FiCheck } from 'react-icons/fi';
 
 const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-shell">
-        <div className="about-copy">
-          <span className="about-eyebrow">WHO WE ARE</span>
-          <h2>About Us</h2>
-          <div className="about-description">
+        <h2>About Us</h2>
+        <div className="about-content">
+          <div className="about-copy">
+            <div className="about-description">
             <p>
               At Terrabyte Global Limited, we provide comprehensive geospatial,
               surveying, and spatial intelligence solutions that empower informed
@@ -29,35 +29,19 @@ const About = () => {
               for land-use analysis, environmental monitoring, and natural resource
               management.
             </p>
+            </div>
+            <a href="#contact" className="about-cta">
+              Contact Us <FiArrowRight aria-hidden="true" />
+            </a>
           </div>
-          <a href="#contact" className="about-cta">
-            Contact Us <FiArrowRight aria-hidden="true" />
-          </a>
-        </div>
-
-        <div className="about-visual" aria-label="Terrabyte field surveying team and company strengths">
-          <div className="about-image-stage">
-            <img src="/gis_drone.jpeg" alt="Terrabyte surveyor working with field equipment" />
-          </div>
-          <div className="about-proof about-proof-top-left">
-            <FiCheckCircle aria-hidden="true" />
-            <span>Data That Drives<br />Results</span>
-          </div>
-          <div className="about-proof about-proof-top-right">
-            <FiCheckCircle aria-hidden="true" />
-            <span>Innovation at<br />Work</span>
-          </div>
-          <div className="about-proof about-proof-bottom-left">
-            <FiCheckCircle aria-hidden="true" />
-            <span>Solutions Made<br />for You</span>
-          </div>
-          <div className="about-proof about-proof-bottom-right">
-            <FiCheckCircle aria-hidden="true" />
-            <span>Expertise You Can<br />Trust</span>
-          </div>
-          <div className="about-proof about-proof-bottom-center">
-            <FiCheckCircle aria-hidden="true" />
-            <span>Empowering<br />Professionals</span>
+          <div className="about-strengths">
+            <h3>Why Choose Us</h3>
+            <ul>
+              <li><FiCheck aria-hidden="true" /><span>Innovation at Work</span></li>
+              <li><FiCheck aria-hidden="true" /><span>Accurate Spatial Insights</span></li>
+              <li><FiCheck aria-hidden="true" /><span>Industry-Standard Expertise</span></li>
+              <li><FiCheck aria-hidden="true" /><span>Reliable Field Solutions</span></li>
+            </ul>
           </div>
         </div>
       </div>

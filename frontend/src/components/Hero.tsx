@@ -49,7 +49,8 @@ const Hero = () => {
       <div className="mx-auto flex min-h-[680px] max-w-7xl flex-col justify-between px-5 pb-8 pt-24 sm:min-h-[700px] sm:px-8 lg:px-12">
         <div className="max-w-xl pt-10 sm:pt-16">
           <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-white/35 bg-white/10 px-5 py-2 text-xs font-medium tracking-wide text-blue-50 backdrop-blur-sm">
-            <FiMapPin className="text-lg text-sky-300" />
+            <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="12" r="3" fill="currentColor" stroke="none" />
             Nigeria&apos;s geospatial technology partner
           </div>
           <h1 className="max-w-lg text-5xl font-black leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl">
