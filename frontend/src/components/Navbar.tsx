@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link href="#contact">Contact</Link>
         </div>
         <div className="hidden items-center gap-2 sm:flex">
-          <a href="#contact" className="rounded-md bg-slate-100 px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-200">Talk to us</a>
+          <a href="#contact" className="rounded-md bg-slate-100 px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-200">Login</a>
           <a href="#services" className="inline-flex items-center gap-2 rounded-md bg-[#2876ed] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1c64d1]">Get started <FiArrowRight /></a>
         </div>
         <button type="button" className="rounded-md p-2 text-slate-700 sm:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen}>
