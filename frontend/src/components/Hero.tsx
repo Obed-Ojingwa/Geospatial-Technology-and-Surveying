@@ -3,9 +3,9 @@ import { FiArrowRight, FiCheckCircle, FiChevronLeft, FiChevronRight, FiMapPin } 
 
 const Hero = () => {
   const images = [
-    { src: '/gis_drone.jpeg', alt: 'Surveying drone in the field' },
-    { src: '/gis_img.jpg', alt: 'Geospatial mapping in progress' },
-    { src: '/GIS_map.jpg', alt: 'Digital terrain map' },
+    { src: '/people_drone.jpg', alt: 'Surveying drone in the field' },
+    { src: '/people_gis.png', alt: 'Geospatial mapping in progress' },
+    { src: '/Students_studying_drone_mapping.jpeg', alt: 'Digital terrain map' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
