@@ -18,8 +18,8 @@ const Hero = () => {
   }, [images.length]);
 
   const goToSlide = (index: number) => setCurrentIndex(index);
-  const goToPrevious = () => setCurrentIndex((currentIndex + images.length - 1) % images.length);
-  const goToNext = () => setCurrentIndex((currentIndex + 1) % images.length);
+ // const goToPrevious = () => setCurrentIndex((currentIndex + images.length - 1) % images.length);
+ // const goToNext = () => setCurrentIndex((currentIndex + 1) % images.length);
 
   const stats = [
     ['2,400+', 'Professionals trained'],
@@ -85,7 +85,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-3">
-        <button type="button" onClick={goToPrevious} className="rounded-full p-1 text-white/70 transition hover:bg-white/10 hover:text-white" aria-label="Previous slide"><FiChevronLeft /></button>
+        {/* <button type="button" onClick={goToPrevious} className="rounded-full p-1 text-white/70 transition hover:bg-white/10 hover:text-white" aria-label="Previous slide"><FiChevronLeft /></button> */}
         <div className="flex gap-1.5">
           {images.map((image, idx) => (
           <button
@@ -97,7 +97,7 @@ const Hero = () => {
           />
           ))}
         </div>
-        <button type="button" onClick={goToNext} className="rounded-full p-1 text-white/70 transition hover:bg-white/10 hover:text-white" aria-label="Next slide"><FiChevronRight /></button>
+        {/* <button type="button" onClick={goToNext} className="rounded-full p-1 text-white/70 transition hover:bg-white/10 hover:text-white" aria-label="Next slide"><FiChevronRight /></button> */}
       </div>
     </section>
   );
