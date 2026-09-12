@@ -69,7 +69,7 @@ const Services = () => {
       <div className="services-shell">
         <div className="services-heading">
           <h2>Our Services</h2>
-          <span className="services-arrow" aria-hidden="true" />
+          {/* <span className="services-arrow" aria-hidden="true" /> */}
         </div>
 
         <div className="services-featured-grid">
