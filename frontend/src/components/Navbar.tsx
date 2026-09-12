@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white shadow-sm">
       <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
         <a href="#home" className="flex items-center" aria-label="Geospatial Technology and Surveying home">
-          <img src="/service_logo.png" alt="Geospatial Technology and Surveying" className="h-9 w-auto" />
+          <img src="/service_logo.png" alt="Geospatial Technology and Surveying" className="h-11 w-auto" />
         </a>
         <div className="hidden items-center gap-1 lg:flex">
           <Link href="#services">Services</Link>
