@@ -34,6 +34,7 @@ const App = () => {
                 </section>
                 <About />
                 <Services />
+                <DroneRepair />
                 <Portfolio />
                 <Testimonials />
                 <TestimonialSubmission />
@@ -42,7 +43,7 @@ const App = () => {
                 <Blog />
                 <Event />
                 <Career />
-                <DroneRepair />
+                
                 <ContactForm />
               </main>
               <Footer />
