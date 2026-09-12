@@ -30,7 +30,7 @@ const About = () => {
               management.
             </p>
             </div>
-            <a href="#contact" className="about-cta">
+            <a href="#contact" className="mt-3 inline-flex items-center gap-2 rounded-md bg-[#2876ed] px-4 py-2.5 text-sm font-semibold text-white">
               Contact Us <FiArrowRight aria-hidden="true" />
             </a>
           </div>
