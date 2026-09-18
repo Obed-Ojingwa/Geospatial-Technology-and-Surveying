@@ -1,72 +1,79 @@
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <div className="flex items-center space-x-3 mb-4">
-            
-            <img src="/service_logo.png" alt="Service Logo" className="h-10 w-auto" />
+    <footer className="bg-[#0d1e3d] text-white">
+      <div className="mx-auto max-w-[1180px] px-5 pb-5 pt-8 sm:px-8 lg:px-10">
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
+          <div className="max-w-[290px] lg:pt-1">
+            <div className="mb-3 flex items-center gap-3">
+              <img src="/service_logo.png" alt="Terrabyte Global logo" className="h-[44px] w-[44px] rounded-full object-cover" />
+              <div className="leading-none text-white">
+                <div className="text-[1.6rem] font-black tracking-[0.01em]">TERRABYTE</div>
+              </div>
+            </div>
+
+            <p className="text-[0.92rem] leading-6 text-white/90">
+              Providing cutting-edge geospatial and surveying solutions across Africa.
+            </p>
+
+            <p className="mt-4 text-[0.92rem] leading-6 text-white/90">
+              RC: 1234567 - Lagos, Nigeria
+            </p>
           </div>
-          <p className="text-gray-200">
-            Providing cutting-edge geospatial and surveying solutions across Africa.
-          </p>
-          <div className="mt-4 space-x-2">
-            {/* Social icons placeholder */}
-            <a href="#" className="hover:text-white/80 transition-colors">
-              <span aria-label="Facebook">📘</span>
-            </a>
-            <a href="#" className="hover:text-white/80 transition-colors">
-              <span aria-label="Twitter">🐦</span>
-            </a>
-            <a href="#" className="hover:text-white/80 transition-colors">
-              <span aria-label="Instagram">📸</span>
-            </a>
-            <a href="#" className="hover:text-white/80 transition-colors">
-              <span aria-label="LinkedIn">💼</span>
-            </a>
+
+          <div className="grid gap-8 sm:grid-cols-3 lg:min-w-[620px] lg:justify-between">
+            <div>
+              <h3 className="mb-3 text-[1.05rem] font-semibold text-white">Quick Links</h3>
+              <ul className="space-y-2 text-[0.9rem] text-white/80">
+                <li><a href="#home" className="hover:text-white">Home</a></li>
+                <li><a href="#about" className="hover:text-white">About Us</a></li>
+                <li><a href="#services" className="hover:text-white">Services</a></li>
+                <li><a href="#training" className="hover:text-white">Training</a></li>
+                <li><a href="#store" className="hover:text-white">Store</a></li>
+                <li><a href="#blog" className="hover:text-white">Blog</a></li>
+                <li><a href="#event" className="hover:text-white">Events</a></li>
+                <li><a href="#career" className="hover:text-white">Career</a></li>
+                <li><a href="#contact" className="hover:text-white">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="mb-3 text-[1.05rem] font-semibold text-white">Services</h3>
+              <ul className="space-y-2 text-[0.9rem] text-white/80">
+                <li><a href="#services" className="hover:text-white">Geospatial Survey</a></li>
+                <li><a href="#services" className="hover:text-white">Drone Mapping</a></li>
+                <li><a href="#services" className="hover:text-white">Land Surveying</a></li>
+                <li><a href="#services" className="hover:text-white">GIS and Remote Sensing</a></li>
+                <li><a href="#services" className="hover:text-white">Buy Equipment and Software</a></li>
+                <li><a href="#services" className="hover:text-white">Geophysical Survey</a></li>
+                <li><a href="#services" className="hover:text-white">Consultancy</a></li>
+                <li><a href="#services" className="hover:text-white">Spatial Analysis and Modelling</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="mb-3 text-[1.05rem] font-semibold text-white">Contact</h3>
+              <div className="space-y-2 text-[0.9rem] leading-6 text-white/80">
+                <p>
+                  Stephen Avenue, Mission House, Lotto Area 6, Obafemi Owode, Ogun, Nigeria
+                </p>
+                <p className="mt-3">
+                  <span className="block">johnabodunwa@gmail.com</span>
+                  <span className="block">+2348103791497</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <h3 className="font-semibold mb-4 text-white">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-200">
-            <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-            <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-            <li><a href="#training" className="hover:text-white transition-colors">Training</a></li>
-            <li><a href="#store" className="hover:text-white transition-colors">Store</a></li>
-            <li><a href="#blog" className="hover:text-white transition-colors">Blog</a></li>
-            <li><a href="#event" className="hover:text-white transition-colors">Events</a></li>
-            <li><a href="#career" className="hover:text-white transition-colors">Career</a></li>
-            <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
-          </ul>
+
+        <div className="mt-8 border-t border-white/15 pt-4 text-[0.9rem] text-white/70">
+          <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
+            <p>© {new Date().getFullYear()} Terrabyte Global Ltd. All rights reserved.</p>
+            <div className="flex items-center gap-6">
+              <a href="#" className="hover:text-white">Terms of Use</a>
+              <a href="#" className="hover:text-white">Privacy Policy</a>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3 className="font-semibold mb-4 text-white">Services</h3>
-          <ul className="space-y-2 text-sm text-gray-200">
-            <li><a href="#services" className="hover:text-white transition-colors">Geospatial Survey</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Drone Mapping</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Land Surveying</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">GIS and Remote Sensing</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Buy Equipment and Software</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Geophysical Survey</a></li>
-            <li><a href="#services" className="hover:text-white transition-colors">Consultancy</a></li>
-            {/* <li><a href="#services" className="hover:text-white transition-colors">Drone Repair</a></li> */}
-            <li><a href="#services" className="hover:text-white transition-colors">Spatial Analysis and Modelling</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold mb-4 text-white">Contact</h3>
-          <p className="text-gray-200 mb-2">
-            Stephen Avenue, Mission House, Lotto Area 6, Obafemi Owode, Ogun, Nigeria
-          </p>
-          <p className="text-gray-200 mb-2">
-            <span className="block">johnabodunwa@gmail.com</span>
-            <span className="block">+2348103791497</span>
-          </p>
-        </div>
-      </div>
-      <div className="mt-8 pt-6 border-t border-gray-200 text-center text-sm text-gray-300">
-        © {new Date().getFullYear()} Terrabyte Global Ltd. All rights reserved.
       </div>
     </footer>
   );
