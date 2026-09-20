@@ -1,4 +1,6 @@
-import { FaBuilding, FaDrone, FaLayers, FaChartArea, FaMap, FaSatelliteDish } from 'react-icons/fa';
+import { FaBuilding, FaChartArea, FaMap, FaSatelliteDish } from 'react-icons/fa';
+
+// import { FaBuilding, FaDrone, FaLayers, FaChartArea, FaMap, FaSatelliteDish } from 'react-icons/fa';
 
 const portfolioProjects = [
   {
@@ -8,8 +10,8 @@ const portfolioProjects = [
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwxfHx1cmJhbnxlbnwwfHx8fDE2MDc5MTYzNDg&ixlib=rb-1.2.1&q=80&w=400",
     description: "Comprehensive 3D modeling and mapping of downtown infrastructure for city planning and development initiatives.",
     technologies: ["Drone Mapping", "LiDAR Processing", "GIS Analysis", "3D Modeling"],
-    client: "Metropolitan Development Authority",
-    duration: "6 months",
+    // client: "Metropolitan Development Authority",
+    // duration: "6 months",
     location: "Lagos, Nigeria",
     highlights: [
       "500+ acres mapped with 2cm accuracy",
@@ -25,8 +27,8 @@ const portfolioProjects = [
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHxjb2FzdCUyMGVyb3Npb258ZW58MHx8fHwxNjA3OTE2MzUy&ixlib=rb-1.2.1&q=80&w=400",
     description: "Multi-year study monitoring coastal erosion rates along Nigeria's coastline using satellite imagery and drone surveys.",
     technologies: ["Satellite Imagery", "Change Detection", "GIS Analysis", "Remote Sensing"],
-    client: "Federal Ministry of Environment",
-    duration: "18 months",
+    // client: "Federal Ministry of Environment",
+    // duration: "18 months",
     location: "Niger Delta Region",
     highlights: [
       "Monitored 150km of coastline",
@@ -42,8 +44,8 @@ const portfolioProjects = [
     image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBmaXJldHxlbnwwfHx8fDE2MDc5MTYzNTU&ixlib=rb-1.2.1&q=80&w=400",
     description: "Precision agriculture implementation for large-scale farms using drone-based multispectral imaging and soil analysis.",
     technologies: ["Multispectral Imaging", "NDVI Analysis", "Soil Sampling", "Variable Rate Technology"],
-    client: "GreenField Agro Solutions",
-    duration: "4 months",
+    // client: "GreenField Agro Solutions",
+    // duration: "4 months",
     location: "Oyo State, Nigeria",
     highlights: [
       "Mapped 2,500 hectares of farmland",
@@ -59,8 +61,8 @@ const portfolioProjects = [
     image: "https://images.unsplash.com/photo-1581091851971-8464d0f3cca5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzQyNzl8MHwxfHNlYXJjaHwzfHx0cmFuc3BvcnRhdGlvbiUyMGluc3RydWN0dXJlfGVufDB8fHx8MTYwNzkxNjM2MA..&ixlib=rb-1.2.1&q=80&w=400",
     description: "Comprehensive assessment of major highways and bridges using drone photogrammetry and structural analysis techniques.",
     technologies: ["Photogrammetry", "Structural Analysis", "Defect Detection", "3D Modeling"],
-    client: "Federal Ministry of Works",
-    duration: "8 months",
+    // client: "Federal Ministry of Works",
+    // duration: "8 months",
     location: "Abuja-Lokoja Highway Corridor",
     highlights: [
       "Inspected 12 bridges and 8 overpasses",
@@ -142,8 +144,8 @@ const Portfolio = () => {
                 </div>
 
                 <div className="space-y-2 text-gray-700 text-sm">
-                  <p><strong>Client:</strong> {project.client}</p>
-                  <p><strong>Duration:</strong> {project.duration}</p>
+                  {/* <p><strong>Client:</strong> {project.client}</p>
+                  <p><strong>Duration:</strong> {project.duration}</p> */}
                 </div>
 
                 <div className="mt-4">

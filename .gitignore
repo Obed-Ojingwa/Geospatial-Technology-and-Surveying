@@ -18,8 +18,6 @@ env.bak/
 venv.bak/
 
 # Environment variables
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -46,7 +44,6 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # IDEs and editors
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -131,7 +128,6 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -156,3 +152,4 @@ venv.bak/
 
 # Playwright
 playwright-report
+config.bat
